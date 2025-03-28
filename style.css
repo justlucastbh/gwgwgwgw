@@ -1,0 +1,86 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.terminal {
+    max-width: 800px;
+    margin: 5vh auto;
+    padding: 2rem;
+}
+
+.glow {
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #0ff;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px #fff, 0 0 10px #0ff; }
+    to { text-shadow: 0 0 20px #fff, 0 0 30px #0ff; }
+}
+
+.cyber-button {
+    display: block;
+    margin: 3rem auto;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.cyber-button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+.grid-item {
+    border: 2px solid #0ff;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.grid-item:hover {
+    box-shadow: 0 0 30px #0ff;
+    transform: translateY(-5px);
+}
+
+.status-container {
+    border: 3px solid #0ff;
+    padding: 3rem;
+    margin: 5rem 0;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+}
+
+.status-box {
+    line-height: 2.5;
+    font-size: 1.2rem;
+}
+
+.online {
+    color: #0f0;
+    text-shadow: 0 0 15px #0f0;
+}
+
+.glow-link {
+    color: #0ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.glow-link:hover {
+    text-shadow: 0 0 20px #0ff;
+}
